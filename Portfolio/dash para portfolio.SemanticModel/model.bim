@@ -1,0 +1,696 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"2024-informe-ministerio_actualizado\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.137.952.0 (24.10)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "es-ES",
+    "cultures": [
+      {
+        "name": "es-ES",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "ca9a3bc8-da4f-4abe-a9f0-635a21f57e1c",
+        "fromColumn": "Fecha UTC",
+        "fromTable": "2024-informe-ministerio_actualizado",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_3279de43-c6bc-40e6-a14d-b0c074f36414"
+      }
+    ],
+    "sourceQueryCulture": "es-AR",
+    "tables": [
+      {
+        "name": "2024-informe-ministerio_actualizado",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Fecha UTC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "78323656-c6e6-4d06-a7ba-2c1075057dcd",
+            "sourceColumn": "Fecha UTC",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variación",
+                "defaultHierarchy": {
+                  "hierarchy": "Jerarquía de fechas",
+                  "table": "LocalDateTable_3279de43-c6bc-40e6-a14d-b0c074f36414"
+                },
+                "isDefault": true,
+                "relationship": "ca9a3bc8-da4f-4abe-a9f0-635a21f57e1c"
+              }
+            ]
+          },
+          {
+            "name": "Hora UTC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "878f2d01-ea1c-42f0-ad2b-d2aabf0cc48c",
+            "sourceColumn": "Hora UTC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Clase de Vuelo (todos los vuelos)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c1a4c740-8408-4ac3-afea-2f57bf16df86",
+            "sourceColumn": "Clase de Vuelo (todos los vuelos)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Clasificación Vuelo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "90824569-24ec-4941-8e3f-23d9b8dfc38d",
+            "sourceColumn": "Clasificación Vuelo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tipo de Movimiento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "57fd5aab-43db-4ddb-8c4e-1394de660d40",
+            "sourceColumn": "Tipo de Movimiento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Aeropuerto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "da45ee05-ffa9-4625-8b82-65c6de399e4f",
+            "sourceColumn": "Aeropuerto",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Origen / Destino",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "444788b5-6a07-4208-81b2-c5b80c5b1f26",
+            "sourceColumn": "Origen / Destino",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Aerolinea Nombre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3573e4d1-ffd1-4d43-81a9-b36f6ab98fa0",
+            "sourceColumn": "Aerolinea Nombre",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Aeronave",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3b66ce7d-29ec-403a-a19f-74a9a9e98e53",
+            "sourceColumn": "Aeronave",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Pasajeros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a2907ea8-9ead-4bd5-bca6-6c2bafecd797",
+            "sourceColumn": "Pasajeros",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "PAX",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4de57ee7-0177-4759-97ef-ecafe9a4ad33",
+            "sourceColumn": "PAX",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Calidad dato",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "6a131eee-b706-4c70-b436-55331087eae8",
+            "sourceColumn": "Calidad dato",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d0a76887-672a-4d06-b8da-f4d567a9fa3a",
+        "measures": [
+          {
+            "name": "Medida",
+            "expression": "COUNTROWS('2024-informe-ministerio_actualizado')",
+            "formatString": "0",
+            "lineageTag": "2dffaf0b-16c1-4b44-bc9e-49842cf09c99"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "2024-informe-ministerio_actualizado",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\argbr\\Desktop\\archivos csv prueba\\2024-informe-ministerio_actualizado.csv\"),[Delimiter=\";\", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Fecha UTC\", type date}, {\"Hora UTC\", type time}, {\"Clase de Vuelo (todos los vuelos)\", type text}, {\"Clasificación Vuelo\", type text}, {\"Tipo de Movimiento\", type text}, {\"Aeropuerto\", type text}, {\"Origen / Destino\", type text}, {\"Aerolinea Nombre\", type text}, {\"Aeronave\", type text}, {\"Pasajeros\", Int64.Type}, {\"PAX\", Int64.Type}, {\"Calidad dato\", type text}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_b99ed22d-d35f-4bf9-b771-98baea38d705",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "3b21b2ad-6f70-4d2f-b0ad-56308419195d",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9c2ee7cb-bd82-4815-bbd7-2bc8aec3a61f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "20adde2c-add4-44d9-950f-18458b56dcfb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "af86533d-410f-473d-8dca-9284e8c4a958",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "890807e9-8c14-4b5c-b874-322f64a41d73",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "1b3812d9-4fa4-4051-be07-e1f86af25b33",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b5b1b1bd-7fc2-481a-91ec-c263d227e120",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "9dfd9160-d56a-4416-aa8f-5d63a095e2aa",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "2affe2aa-0674-4cee-8a3e-29898e0e134e",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "3b484ee1-c16e-4a74-a5de-9c0b384e482a",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "5b821c94-e011-456a-a090-e862109460a4",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "7c870c69-e7a7-4dbb-a517-24940f25d184"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "9a51fb73-4f11-447f-a32f-110984926faa",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_b99ed22d-d35f-4bf9-b771-98baea38d705",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_3279de43-c6bc-40e6-a14d-b0c074f36414",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "6bbed3ef-072a-4336-bd10-3dcaade3a8c8",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "83e20f71-5483-4b63-a5c0-a3835cb6870b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "8e3d98ea-9e5b-4615-9fc9-476708454754",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "592af572-10cb-4d77-824a-4017fda71164",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "baa62939-3c2d-49e4-9d4e-1e1e48c51282",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "a5091df8-7708-437b-82bb-304b1658fd40",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "16992e75-6b78-4351-bcc3-b5e9fa0a4d9e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "24939f5d-a30d-4ba2-9154-5fad85c3c596",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "a908ac56-8f72-4627-b423-bddb03c85f16",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "885cd3b6-317f-4048-8a81-3fcc032b5d78",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "6e45c13e-3ee3-44cd-81ee-9534fb0066e2",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "1d2de426-99f1-4297-99c7-e65d8f122269"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "ef0b918f-2d64-495e-87a1-eac3ede7f5f9",
+        "partitions": [
+          {
+            "name": "LocalDateTable_3279de43-c6bc-40e6-a14d-b0c074f36414",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('2024-informe-ministerio_actualizado'[Fecha UTC])), 1, 1), Date(Year(MAX('2024-informe-ministerio_actualizado'[Fecha UTC])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}
